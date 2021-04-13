@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+
+import UserItem from './UserItem';
 import './App.css';
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <UserItem name="Mary" />
       </header>
     </div>
   );
