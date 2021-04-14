@@ -4,6 +4,19 @@ import UserItem from './UserItem';
 import LoginControl from './LoginControl';
 import './App.css';
 
+const userList = [
+  {
+    id: 5,
+    name: 'Mary',
+  },{
+    id: 6,
+    name: 'Jack',
+  },{
+    id: 7,
+    name: 'Bob',
+  }
+]
+
 function App() {
   return (
     <div className="App">
@@ -21,7 +34,7 @@ function App() {
           Learn React
         </a>
         <LoginControl />
-        <UserItem name="Mary" />
+        <UserItem name="Mary" userList={userList} />
       </header>
     </div>
   );
