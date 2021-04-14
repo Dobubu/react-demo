@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import UserList from './UserList';
 import LoginControl from './LoginControl';
 import NameForm from './NameForm';
+import EssayForm from './EssayForm';
 
 import './App.css';
 
@@ -37,6 +38,7 @@ function App() {
         </a>
         <LoginControl />
         <NameForm />
+        <EssayForm />
         <UserList name="Mary" userList={userList} />
       </header>
     </div>
