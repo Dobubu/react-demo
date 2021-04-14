@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import ClockClass from './ClockClass';
 import ClockFunction from './ClockFunction';
+import Page from './Page';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <ClockClass />
     <ClockFunction />
+    <Page />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
