@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import ClockClass from './ClockClass';
+import ClockFunction from './ClockFunction';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <ClockClass />
+    <ClockFunction />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
