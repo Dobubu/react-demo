@@ -2,6 +2,8 @@ import logo from './logo.svg';
 
 import UserList from './UserList';
 import LoginControl from './LoginControl';
+import NameForm from './NameForm';
+
 import './App.css';
 
 const userList = [
@@ -34,6 +36,7 @@ function App() {
           Learn React
         </a>
         <LoginControl />
+        <NameForm />
         <UserList name="Mary" userList={userList} />
       </header>
     </div>
