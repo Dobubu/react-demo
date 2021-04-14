@@ -6,7 +6,17 @@ class ClockClass extends React.Component {
   // 1
   constructor(props) {
     super(props);
-    this.state = { date: new Date() };
+    this.state = { 
+      date: new Date(),
+      isToggleOn: false
+    };
+    this.toggle = this.toggle.bind(this)
+  }
+
+  toggle() {
+    this.setState(state => ({
+      isToggleOn: !state.isToggleOn
+    }));
   }
 
   // 3
@@ -32,7 +42,10 @@ class ClockClass extends React.Component {
     return pug`
       div
         h1 Hello, world!
+
         h2 It is #{ this.state.date.toLocaleTimeString() }.
+
+        button(onClick=this.toggle) toggle
     `
   }
 }
