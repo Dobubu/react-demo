@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 
-import UserItem from './UserItem';
+import UserList from './UserList';
 import LoginControl from './LoginControl';
 import './App.css';
 
@@ -34,7 +34,7 @@ function App() {
           Learn React
         </a>
         <LoginControl />
-        <UserItem name="Mary" userList={userList} />
+        <UserList name="Mary" userList={userList} />
       </header>
     </div>
   );
