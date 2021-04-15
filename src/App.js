@@ -4,6 +4,7 @@ import UserList from './UserList';
 import LoginControl from './LoginControl';
 import NameForm from './NameForm';
 import EssayForm from './EssayForm';
+import FlavorForm from './FlavorForm';
 
 import './App.css';
 
@@ -39,6 +40,7 @@ function App() {
         <LoginControl />
         <NameForm />
         <EssayForm />
+        <FlavorForm />
         <UserList name="Mary" userList={userList} />
       </header>
     </div>
