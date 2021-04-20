@@ -1,7 +1,9 @@
 {
-  "plugins": [ "react-pug" ],
+  "plugins": [ "react-pug", "react-hooks" ],
   "extends": [ "react-app", "plugin:react-pug/all" ],
   "rules": {
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error", // 檢查 Hook 的規則
+    "react-hooks/exhaustive-deps": "warn" // 檢查 effect 的相依性
   }
 }

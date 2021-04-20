@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Display from './Display';
 import Button from './Button';
+import ButtonEffect from './ButtonEffect';
 
 const ClockFunction = (props) => {
   const [ counter, setCounter ] = useState(0)
@@ -38,6 +39,8 @@ const ClockFunction = (props) => {
       )
 
       // button(onClick=setToZero) zero
+
+      ButtonEffect
 `
 }
 

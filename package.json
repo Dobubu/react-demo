@@ -40,6 +40,7 @@
     "babel-plugin-transform-react-pug": "^7.0.1",
     "customize-cra": "^1.0.0",
     "eslint": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-pug": "^0.8.4",
     "react-app-rewired": "^2.1.8"
   },
