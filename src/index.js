@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import ClockClass from './ClockClass';
@@ -8,12 +9,16 @@ import Page from './Page';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ClockClass />
-    <ClockFunction />
-    <Page />
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Switch>
+      <React.StrictMode>
+        <ClockClass />
+        <ClockFunction />
+        <Page />
+        <App />
+      </React.StrictMode>
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 

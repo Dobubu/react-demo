@@ -7,6 +7,9 @@ import EssayForm from './EssayForm';
 import FlavorForm from './FlavorForm';
 import Reservation from './Reservation';
 
+import { Route } from 'react-router-dom';
+import { Home, Books, Electronics } from './Pages'
+
 import './App.css';
 
 const userList = [
@@ -38,6 +41,9 @@ function App() {
         >
           Learn React
         </a>
+        <Route path="/" exact component={Home} />
+        <Route path="/books" component={Books} />
+        <Route path="/electronics" component={Electronics} />
         <LoginControl />
         <NameForm />
         <EssayForm />
