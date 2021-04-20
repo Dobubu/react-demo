@@ -8,6 +8,7 @@ import FlavorForm from './FlavorForm';
 import Reservation from './Reservation';
 
 import { Route } from 'react-router-dom';
+import { renderRoutes } from 'react-router-config';
 import routes from './routes';
 
 import './App.css';
@@ -41,19 +42,7 @@ function App() {
         >
           Learn React
         </a>
-        {routes.map((route, i) => {
-          const { path, exact, routes } = route;
-          return (
-            <Route
-              key={i}
-              path={path}
-              exact={exact}
-              render={(routeProps) => (
-                <route.component routes={routes} {...routeProps} />
-              )}
-            />
-          );
-        })}
+        {renderRoutes(routes)}
         <LoginControl />
         <NameForm />
         <EssayForm />
